@@ -8,7 +8,7 @@ def encodeDataInImage(image, data):
 
     encodedImage=Image.new(evenImage.mode, evenImage.size)
     encodedImage.putdata(encodedPixels)
-    return encodeImage
+    return encodedImage
 def makeImageEven(image):
     pixels = list(image.getdata())
     evenPixels = [(r>>1<<1, g>>1<<1,b>>1<<1,t>>1<<1) for [r,g,b,t] in pixels]
