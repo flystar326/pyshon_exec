@@ -1,6 +1,6 @@
 def encodeDataInImage(image, data):
     evenImage = makeImageEven(image)
-    binary = ' '.join(map(constLenBin, bytearray(data, 'utf-8')))
+    binary = ''.join(map(constLenBin, bytearray(data, 'utf-8')))
     if len(binary) > len(image.getdata()) * 4:
         raise Exception("Error: Can't encode more than " + len(evenImage.getdata()) *4 + " bits in this image.")
 
@@ -17,7 +17,7 @@ def makeImageEven(image):
     return evenImage
 
 def constLenBin(int):
-    binary = "0"*(8-(len(bin(int))-2)+bin(int).replace('0b',''))
+    binary = "0"*(8-(len(bin(int))-2))+bin(int).replace('0b','')
     return binary
 
 def decodeImage(image):
@@ -41,5 +41,5 @@ def binaryToString(binary):
         index += length
     return ''.join(string)
 
-encodeDataImage(Image.open("coffee.png"), 'ƒ„∫√ ¿ΩÁ£¨Hello world!').save('encodeImage.png')
+encodeDataImage(Image.open("coffee.png"), 'sdfsdf,Hello world!').save('encodeImage.png')
 print(decodeImage(Image.open("encodeImage.png")))
