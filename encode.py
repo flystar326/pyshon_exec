@@ -1,3 +1,5 @@
+from PIL import Image
+
 def encodeDataInImage(image, data):
     evenImage = makeImageEven(image)
     binary = ''.join(map(constLenBin, bytearray(data, 'utf-8')))
