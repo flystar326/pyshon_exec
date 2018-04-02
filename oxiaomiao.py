@@ -115,7 +115,7 @@ while True:
                 score += 10
                 bomb_x =random.randint(0,500)
                 bomb_y = -50
-        if Round . 2:
+        if Round > 2:
             if mine_y > 500:
                 mine_x = random.randint(0, 500)
                 mine_y = -50
@@ -125,4 +125,24 @@ while True:
                     mine_y = -50
                     lives -= 1
                     pic = cat2
+                    if lives == 0:
+                        game_over = True
+        
+        screen.blit(fish, (bomb_x, int(bomb_y)))
+        
+        if Round > 2:
+            screen.blit(mine_png, (mine_x, int(mine_y)))
+        
+        pos_x = mouse_x
+        if pos_x < 0:
+            pos_x = 0
+        elif pos_x > 510:
+            pos_x = 500
+        
+        if lives < 5:
+            pic = cat2
+        
+        screen.blit(pic, (pos_x, pos_y))
+    
+    print_text(font1, 0, 0, "LIVES: ")
     
