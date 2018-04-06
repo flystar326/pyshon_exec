@@ -2,3 +2,5 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 http://python.jobbole.com/88729/		Python Re模块
 http://www.cnblogs.com/msxh/p/4966899.html	Python游戏编程之旅，pygame
 http://www.pygame.org/docs/index.html		pygame文档
+
+https://github.com/nedbat/byterun		byterun
