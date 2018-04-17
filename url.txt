@@ -7,3 +7,5 @@ https://blog.csdn.net/mirkerson/article/details/43986503	ALSA
 https://github.com/nedbat/byterun		byterun
 https://www.cnblogs.com/lovemyspring/p/3214598.html  argparse
 https://www.2cto.com/kf/201412/363654.html	argparse
+https://blog.csdn.net/shutdown_r_now/article/details/51991076	Linux 链接库编译与多重依赖
+https://zhidao.baidu.com/question/432123966.html	Linux动态库多重依赖，编译问题
